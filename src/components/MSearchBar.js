@@ -3,7 +3,6 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
-import { MDetailCard } from "./MDetailCard";
 import { API_KEY } from "../api/config";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",

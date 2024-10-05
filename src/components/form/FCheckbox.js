@@ -1,7 +1,7 @@
 import { useFormContext, Controller } from "react-hook-form";
 import { Checkbox, FormControlLabel } from "@mui/material";
 
-function FCheckbox({ name, label, ...other }) {
+function FCheckbox({ name, label }) {
   const { control } = useFormContext();
   return (
     <FormControlLabel
