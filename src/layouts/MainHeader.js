@@ -146,8 +146,21 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar
+        position="static"
+        sx={{
+          width: "100%", // Đảm bảo AppBar chiếm toàn bộ chiều rộng
+          margin: 0, // Xóa bỏ bất kỳ margin nào
+          padding: 0, // Xóa bỏ padding nếu có
+        }}
+      >
+        <Toolbar
+          sx={{
+            width: "100%", // Đảm bảo Toolbar chiếm hết chiều rộng
+            margin: 0, // Xóa margin
+            padding: 0, // Xóa padding
+          }}
+        >
           <IconButton
             size="large"
             color="inherit"
@@ -178,7 +191,6 @@ export default function PrimarySearchAppBar() {
             />
             <IconButton
               size="large"
-              //cool styling ui props
               aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
